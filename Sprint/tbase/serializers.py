@@ -1,5 +1,9 @@
+import logging
+
 from rest_framework import serializers
 from .models import User, Coord, Level, PerevalAdded, Images
+
+logger = logging.getLogger(__name__)
 
 
 class UserSerializer(serializers.ModelSerializer):
@@ -41,10 +45,10 @@ class PerevalAddedSerializer(serializers.ModelSerializer):
         coords_data = validated_data.pop('coords')
         images_data = validated_data.pop('images')
 
-        # Добавляем оператор print для вывода информации
-        print("User Data:", user_data)
-        print("Coords Data:", coords_data)
-        print("Images Data:", images_data)
+        # Логирование информации в терминал
+        logger.info("User Data: %s", user_data)
+        logger.info("Coords Data: %s", coords_data)
+        logger.info("Images Data: %s", images_data)
 
         user_instance = User.objects.create(**user_data)
         coords_instance = Coord.objects.create(**coords_data)

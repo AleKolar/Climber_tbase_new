@@ -1,26 +1,50 @@
-from .serializers import PerevalAddedSerializer
-
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
 import requests
 import json
 
+from .models import Images, Coord, User
+from .serializers import PerevalAddedSerializer
+
 
 class SubmitDataView(APIView):
     def post(self, request):
-        pereval_serializer = PerevalAddedSerializer(data=request.data)
+        # Создание объекта User
+        user_data = request.data.get('user')
+        user_email = user_data.get('email')
+        user_instance, created = User.objects.get_or_create(email=user_email, defaults=user_data)
+
+        # Создание объекта Coords
+        coords_data = request.data.get('coords')
+        coords_instance = Coord.objects.create(**coords_data)
+        coords_instance.save()
+
+        # Создание объектов Images
+        images_data = request.data.get('images')
+        images_instances = [Images.objects.create(**image) for image in images_data]
+        for image_instance in images_instances:
+            image_instance.save()
+
+        # Создание объекта PerevalAdded с использованием email от User
+        pereval_data = request.data
+        pereval_data['user'] = user_email
+        pereval_data['coords'] = coords_instance.pk
+
+        pereval_serializer = PerevalAddedSerializer(data=pereval_data)
 
         if pereval_serializer.is_valid():
             pereval_obj = pereval_serializer.save()
 
-            # Отправка данных на внешний API - это мне надо !!!
+            # Связывание объектов Images с PerevalAdded
+            pereval_obj.images.set(images_instances)
+
+            # Код для отправки данных на внешний API
             pereval_data_for_api = {
                 "beauty_title": pereval_obj.beauty_title,
                 "title": pereval_obj.title,
                 "other_titles": pereval_obj.other_titles,
                 "images": [image.data for image in pereval_obj.images.all()],
-                # Включение данных изображений для отправки
             }
 
             external_api_url = 'http://example.com/api/submit/'
@@ -36,5 +60,4 @@ class SubmitDataView(APIView):
         else:
             return Response({'status': 400, 'message': 'Bad Request - Некорректные данные', 'id': None},
                             status=status.HTTP_400_BAD_REQUEST)
-
 
