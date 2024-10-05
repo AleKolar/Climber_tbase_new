@@ -15,6 +15,13 @@ class Coord(models.Model):
     height = models.IntegerField()
 
 
+class Level(models.Model):
+    winter = models.CharField(max_length=10)
+    summer = models.CharField(max_length=10)
+    autumn = models.CharField(max_length=10)
+    spring = models.CharField(max_length=10)
+
+
 class PerevalAdded(models.Model):
     beauty_title = models.CharField(max_length=255)
     title = models.CharField(max_length=255)
@@ -23,10 +30,7 @@ class PerevalAdded(models.Model):
     add_time = models.DateTimeField()
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     coords = models.ForeignKey(Coord, on_delete=models.CASCADE)
-    winter_level = models.CharField(max_length=10)
-    summer_level = models.CharField(max_length=10)
-    autumn_level = models.CharField(max_length=10)
-    spring_level = models.CharField(max_length=10)
+    level = models.OneToOneField(Level, on_delete=models.CASCADE)
     status = models.CharField(max_length=10, choices=[('new', 'new'), ('pending', 'pending'), ('accepted', 'accepted'),
                                                       ('rejected', 'rejected')], default='new')
 
