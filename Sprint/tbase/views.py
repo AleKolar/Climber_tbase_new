@@ -1,13 +1,5 @@
-from rest_framework.views import APIView
-from rest_framework.response import Response
-from rest_framework import status
-import requests
-import json
+from .serializers import PerevalAddedSerializer
 
-from .models import PerevalAdded, User, Coord, Images
-from .serializers import UserSerializer, CoordSerializer, PerevalAddedSerializer, ImagesSerializer
-
-from rest_framework import serializers
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
@@ -22,7 +14,7 @@ class SubmitDataView(APIView):
         if pereval_serializer.is_valid():
             pereval_obj = pereval_serializer.save()
 
-            # Отправка данных на внешний API
+            # Отправка данных на внешний API - это мне надо !!!
             pereval_data_for_api = {
                 "beauty_title": pereval_obj.beauty_title,
                 "title": pereval_obj.title,
@@ -46,27 +38,3 @@ class SubmitDataView(APIView):
                             status=status.HTTP_400_BAD_REQUEST)
 
 
-class PerevalAddedSerializer(serializers.ModelSerializer):
-    user = UserSerializer()
-    coords = CoordSerializer()
-    images = ImagesSerializer(many=True)
-
-    class Meta:
-        model = PerevalAdded
-        fields = ['beauty_title', 'title', 'other_titles', 'connect', 'add_time', 'level', 'status', 'user', 'coords',
-                  'images']
-
-    def create(self, validated_data):
-        user_data = validated_data.pop('user')
-        coords_data = validated_data.pop('coords')
-        images_data = validated_data.pop('images')
-
-        user_instance = User.objects.create(**user_data)
-        coords_instance = Coord.objects.create(**coords_data)
-        images_instances = [Images.objects.create(**image_data) for image_data in images_data]
-
-        validated_data['user'] = user_instance
-        validated_data['coords'] = coords_instance
-        validated_data['images'] = images_instances
-
-        return PerevalAdded.objects.create(**validated_data)
