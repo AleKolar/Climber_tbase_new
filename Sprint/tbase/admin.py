@@ -1,3 +1,9 @@
 from django.contrib import admin
+from .models import User, Coords, PerevalAdded, PerevalImages
 
-# Register your models here.
+
+admin.site.register(User)
+admin.site.register(Coords)
+admin.site.register(PerevalAdded)
+admin.site.register(PerevalImages)
+

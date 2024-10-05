@@ -27,16 +27,15 @@ class SubmitDataView(APIView):
             images_serializer.save()
 
             pereval_data_for_api = {
-                "beauty_title": pereval_obj.beautyTitle,
+                "beauty_title": pereval_obj.beauty_title,
                 "title": pereval_obj.title,
                 "other_titles": pereval_obj.other_titles,
             }
 
-            external_api_url = 'http://some_kind_of_external_api_where_will_I_send_it_url/submitData/'
+            external_api_url = 'http://example.com/api/submit/'
             headers = {'Content-Type': 'application/json'}
             response = requests.post(external_api_url, data=json.dumps(pereval_data_for_api), headers=headers)
 
-            # Проверка ответа от внешнего API URL
             if response.status_code == 200:
                 return Response({'status': 200, 'message': 'Отправлено успешно и на внешний API', 'id': pereval_obj.id},
                                 status=status.HTTP_200_OK)

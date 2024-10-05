@@ -4,7 +4,6 @@ from rest_framework.request import Request
 
 from ..models import Coords
 
-
 def get_coords_data():
     coords_instance = Coords.objects.first()
 
@@ -16,7 +15,6 @@ def get_coords_data():
         return coords_data
     else:
         return None
-
 
 coords = get_coords_data()
 
@@ -40,5 +38,6 @@ data = {
     "images": [
         {"title": "Image 1"},
         {"title": "Image 2"}
-    ]
+    ],
+    "status": "new"
 }

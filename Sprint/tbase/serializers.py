@@ -22,6 +22,10 @@ class PerevalAddedSerializer(serializers.ModelSerializer):
         model = PerevalAdded
         fields = '__all__'
 
+    def create(self, validated_data):
+        validated_data['status'] = 'new'  # Установка значения 'new' для поля 'status'
+        return PerevalAdded.objects.create(**validated_data)
+
 
 class PerevalImagesSerializer(serializers.ModelSerializer):
     class Meta:
