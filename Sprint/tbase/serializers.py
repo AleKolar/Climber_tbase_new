@@ -1,7 +1,6 @@
-from rest_framework import serializers
 from datetime import datetime
-
 from .models import User, Coord, PerevalAdded, PerevalImages, Level
+from rest_framework import serializers
 
 LEVEL_CHOICES = (
     ('1A', '1A'),
@@ -46,17 +45,17 @@ class PerevalAddedSerializer(serializers.ModelSerializer):
         return super(PerevalAddedSerializer, self).to_internal_value(data)
 
     def create(self, validated_data):
-        level_data = validated_data.pop('level')  # Извлекаем данные уровня сложности
-        user_data = validated_data.pop('user')  # Извлекаем данные пользователя
-        coord_data = validated_data.pop('coords')  # Извлекаем данные координат
+        level_data = validated_data.pop('level')
+        user_data = validated_data.pop('user')
+        coord_data = validated_data.pop('coords')
 
-        user_instance = User.objects.create(**user_data)  # Создаем объект User
-        coord_instance = Coord.objects.create(**coord_data)  # Создаем объект Coord
-        level_instance = Level.objects.create(**level_data)  # Создаем объект Level
+        user_instance = User.objects.create(**user_data)
+        coord_instance = Coord.objects.create(**coord_data)
+        level_instance = Level.objects.create(**level_data)
 
-        validated_data['user'] = user_instance  # Устанавливаем связь с объектом User
-        validated_data['coords'] = coord_instance  # Устанавливаем связь с объектом Coord
-        validated_data['level'] = level_instance  # Устанавливаем связь с объектом Level
+        validated_data['user'] = user_instance
+        validated_data['coords'] = coord_instance
+        validated_data['level'] = level_instance
 
         validated_data['status'] = 'new'
         return PerevalAdded.objects.create(**validated_data)

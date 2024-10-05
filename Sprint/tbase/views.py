@@ -1,21 +1,36 @@
-import json
-import requests
-
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
-
 from .serializers import UserSerializer, CoordSerializer, PerevalAddedSerializer, PerevalImagesSerializer
+import requests
+import json
 
 
 class SubmitDataView(APIView):
     def post(self, request):
-        user_serializer = UserSerializer(data=request.data.get('user'))
-        coords_serializer = CoordSerializer(data=request.data.get('coords'))
-        pereval_data = request.data.copy()
-        pereval_data['status'] = 'new'
+        user_data = request.data.get('user')
+        coords_data = request.data.get('coords')
+        images_data = request.data.get('images')
+
+        user_serializer = UserSerializer(data=user_data)
+        coords_serializer = CoordSerializer(data=coords_data)
+        pereval_data = {
+            'beauty_title': request.data.get('beauty_title'),
+            'title': request.data.get('title'),
+            'other_titles': request.data.get('other_titles'),
+            'connect': request.data.get('connect'),
+            'add_time': request.data.get('add_time'),
+            'level': {
+                'winter': request.data.get('level').get('winter'),
+                'summer': request.data.get('level').get('summer'),
+                'autumn': request.data.get('level').get('autumn'),
+                'spring': request.data.get('level').get('spring'),
+            },
+            'status': 'new',
+        }
+
         pereval_serializer = PerevalAddedSerializer(data=pereval_data)
-        images_serializer = PerevalImagesSerializer(data=request.data.get('images'), many=True)
+        images_serializer = PerevalImagesSerializer(data=images_data, many=True)
 
         if user_serializer.is_valid() and coords_serializer.is_valid() and pereval_serializer.is_valid() and images_serializer.is_valid():
             user_obj = user_serializer.save()
