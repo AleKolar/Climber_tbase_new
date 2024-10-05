@@ -1,50 +1,34 @@
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
-from .serializers import UserSerializer, CoordSerializer, PerevalAddedSerializer, PerevalImagesSerializer
+import requests
+import json
+
+from .models import PerevalAdded, User, Coord, Images
+from .serializers import UserSerializer, CoordSerializer, PerevalAddedSerializer, ImagesSerializer
+
+from rest_framework import serializers
+from rest_framework.views import APIView
+from rest_framework.response import Response
+from rest_framework import status
 import requests
 import json
 
 
 class SubmitDataView(APIView):
     def post(self, request):
-        user_data = request.data.get('user')
-        coords_data = request.data.get('coords')
-        images_data = request.data.get('images')
+        pereval_serializer = PerevalAddedSerializer(data=request.data)
 
-        user_serializer = UserSerializer(data=user_data)
-        coords_serializer = CoordSerializer(data=coords_data)
-        pereval_data = {
-            'beauty_title': request.data.get('beauty_title'),
-            'title': request.data.get('title'),
-            'other_titles': request.data.get('other_titles'),
-            'connect': request.data.get('connect'),
-            'add_time': request.data.get('add_time'),
-            'level': {
-                'winter': request.data.get('level').get('winter'),
-                'summer': request.data.get('level').get('summer'),
-                'autumn': request.data.get('level').get('autumn'),
-                'spring': request.data.get('level').get('spring'),
-            },
-            'status': 'new',
-        }
+        if pereval_serializer.is_valid():
+            pereval_obj = pereval_serializer.save()
 
-        pereval_serializer = PerevalAddedSerializer(data=pereval_data)
-        images_serializer = PerevalImagesSerializer(data=images_data, many=True)
-
-        if user_serializer.is_valid() and coords_serializer.is_valid() and pereval_serializer.is_valid() and images_serializer.is_valid():
-            user_obj = user_serializer.save()
-            coords_obj = coords_serializer.save()
-            pereval_data['user'] = user_obj.id
-            pereval_data['coords'] = coords_obj.id
-            pereval_obj = pereval_serializer.create(pereval_data)
-            pereval_obj.save()
-            images_serializer.save()
-
+            # Отправка данных на внешний API
             pereval_data_for_api = {
                 "beauty_title": pereval_obj.beauty_title,
                 "title": pereval_obj.title,
                 "other_titles": pereval_obj.other_titles,
+                "images": [image.data for image in pereval_obj.images.all()],
+                # Включение данных изображений для отправки
             }
 
             external_api_url = 'http://example.com/api/submit/'
@@ -60,3 +44,29 @@ class SubmitDataView(APIView):
         else:
             return Response({'status': 400, 'message': 'Bad Request - Некорректные данные', 'id': None},
                             status=status.HTTP_400_BAD_REQUEST)
+
+
+class PerevalAddedSerializer(serializers.ModelSerializer):
+    user = UserSerializer()
+    coords = CoordSerializer()
+    images = ImagesSerializer(many=True)
+
+    class Meta:
+        model = PerevalAdded
+        fields = ['beauty_title', 'title', 'other_titles', 'connect', 'add_time', 'level', 'status', 'user', 'coords',
+                  'images']
+
+    def create(self, validated_data):
+        user_data = validated_data.pop('user')
+        coords_data = validated_data.pop('coords')
+        images_data = validated_data.pop('images')
+
+        user_instance = User.objects.create(**user_data)
+        coords_instance = Coord.objects.create(**coords_data)
+        images_instances = [Images.objects.create(**image_data) for image_data in images_data]
+
+        validated_data['user'] = user_instance
+        validated_data['coords'] = coords_instance
+        validated_data['images'] = images_instances
+
+        return PerevalAdded.objects.create(**validated_data)

@@ -10,9 +10,9 @@ class User(models.Model):
 
 
 class Coord(models.Model):
-    latitude = models.FloatField()
-    longitude = models.FloatField()
-    height = models.IntegerField()
+    latitude = models.FloatField(unique=True)
+    longitude = models.FloatField(unique=True)
+    height = models.IntegerField(unique=True)
 
 
 class Level(models.Model):
@@ -22,11 +22,12 @@ class Level(models.Model):
     spring = models.CharField(max_length=10)
 
 
+
 class PerevalAdded(models.Model):
     beauty_title = models.CharField(max_length=255)
     title = models.CharField(max_length=255)
     other_titles = models.CharField(max_length=255)
-    connect = models.TextField()
+    connect = models.TextField(blank=True)
     add_time = models.DateTimeField()
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     coords = models.ForeignKey(Coord, on_delete=models.CASCADE)
@@ -35,6 +36,9 @@ class PerevalAdded(models.Model):
                                                       ('rejected', 'rejected')], default='new')
 
 
-class PerevalImages(models.Model):
-    pereval = models.ForeignKey(PerevalAdded, on_delete=models.CASCADE)
-    image = models.ImageField()
+class Images(models.Model):
+    data = models.TextField()
+    title = models.CharField(max_length=100)
+
+    def __str__(self):
+        return self.title

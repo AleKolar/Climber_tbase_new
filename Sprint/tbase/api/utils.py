@@ -1,11 +1,9 @@
 import requests
 import json
-from rest_framework.request import Request
-
-from ..models import Coords
+from ..models import Coord
 
 def get_coords_data():
-    coords_instance = Coords.objects.first()
+    coords_instance = Coord.objects.first()
 
     if coords_instance:
         coords_data = {
@@ -36,8 +34,8 @@ data = {
         "spring": "High"
     },
     "images": [
-        {"title": "Image 1"},
-        {"title": "Image 2"}
+        {"title": "Image 1", "data": "Image Data 1"},  # Добавлены данные для изображений
+        {"title": "Image 2", "data": "Image Data 2"}
     ],
     "status": "new"
 }
