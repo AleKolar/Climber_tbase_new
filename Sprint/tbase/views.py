@@ -5,13 +5,13 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
 
-from .serializers import UserSerializer, CoordsSerializer, PerevalAddedSerializer, PerevalImagesSerializer
+from .serializers import UserSerializer, CoordSerializer, PerevalAddedSerializer, PerevalImagesSerializer
 
 
 class SubmitDataView(APIView):
     def post(self, request):
         user_serializer = UserSerializer(data=request.data.get('user'))
-        coords_serializer = CoordsSerializer(data=request.data.get('coords'))
+        coords_serializer = CoordSerializer(data=request.data.get('coords'))
         pereval_data = request.data.copy()
         pereval_data['status'] = 'new'
         pereval_serializer = PerevalAddedSerializer(data=pereval_data)

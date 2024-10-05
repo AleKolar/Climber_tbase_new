@@ -1,7 +1,7 @@
 from rest_framework import serializers
 from datetime import datetime
 
-from .models import User, Coords, PerevalAdded, PerevalImages
+from .models import User, Coord, PerevalAdded, PerevalImages
 
 LEVEL_CHOICES = (
     ('1A', '1A'),
@@ -26,9 +26,9 @@ class UserSerializer(serializers.ModelSerializer):
         fields = '__all__'
 
 
-class CoordsSerializer(serializers.ModelSerializer):
+class CoordSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Coords
+        model = Coord
         fields = '__all__'
 
 
