@@ -37,6 +37,29 @@ class PerevalAddedSerializer(serializers.ModelSerializer):
         model = PerevalAdded
         fields = ['beauty_title', 'title', 'other_titles', 'connect', 'add_time', 'user', 'coords', 'level', 'images']
 
+    def create(self, validated_data):
+        user_data = validated_data.pop('user')
+        coords_data = validated_data.pop('coords')
+        level_data = validated_data.pop('level')
+        images_data = validated_data.pop('images')
+
+        add_time = validated_data.pop('add_time')
+        validated_data['add_time'] = add_time
+
+        user_instance, created = User.objects.get_or_create(**user_data)
+        coords_instance = Coords.objects.create(**coords_data)
+        level_instance = Level.objects.create(**level_data)
+        pereval = PerevalAdded.objects.create(**validated_data, user=user_instance, coords=coords_instance,
+                                              level=level_instance)
+
+        pereval.save()
+
+        images_instances = [Images.objects.create(pereval=pereval, **image_data) for image_data in images_data]
+
+        pereval.images.set(images_instances)
+
+        return pereval
+
     def validate(self, data):
         user_data = data.get('user', None)
         user_email = user_data.get('email') if user_data else None
@@ -57,9 +80,3 @@ class PerevalAddedSerializer(serializers.ModelSerializer):
                 raise serializers.ValidationError(f'Отклонено! Статус {instance.get_status_display()}!')
 
         return data
-# user_instance, created = User.objects.get_or_create(**user_data)
-# coords_instance = Coords.objects.create(**coords_data)
-# level_instance = Level.objects.create(**level_data)
-# pereval = PerevalAdded.objects.create(**validateed_data, user=user_instance, coords=coords_instance, level=level_instance)
-# [Images.objects.create(pereval=pereval, **image_data) for image_data in images_data]
-# return pereval

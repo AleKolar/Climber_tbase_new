@@ -41,9 +41,6 @@ class PerevalAdded(models.Model):
     status = models.CharField(max_length=10, choices=STATUS_CHOICES, default='new')
 
 
-# class Images(models.Model):
-#     data = models.ImageField(upload_to='images/')
-#     title = models.CharField(max_length=100)
 class Images(models.Model):
     data = models.TextField()
     title = models.CharField(max_length=100)

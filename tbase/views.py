@@ -1,4 +1,4 @@
-from rest_framework import viewsets
+from rest_framework import viewsets, status
 from rest_framework.response import Response
 from rest_framework.decorators import action
 from .models import User, Coords, Level, Images, PerevalAdded
@@ -9,16 +9,13 @@ class UserViewSet(viewsets.ModelViewSet):
     queryset = User.objects.all()
     serializer_class = UserSerializer
 
-
 class CoordsViewSet(viewsets.ModelViewSet):
     queryset = Coords.objects.all()
     serializer_class = CoordsSerializer
 
-
 class LevelViewSet(viewsets.ModelViewSet):
     queryset = Level.objects.all()
     serializer_class = LevelSerializer
-
 
 class ImagesViewSet(viewsets.ModelViewSet):
     queryset = Images.objects.all()
@@ -26,14 +23,8 @@ class ImagesViewSet(viewsets.ModelViewSet):
 
     def perform_create(self, serializer):
         images_data = serializer.validated_data.get('images')
-        images_instances = []
-
-        for image_data in images_data:
-            image_instance = Images.objects.create(data=image_data.get('data'), title=image_data.get('title'))
-            images_instances.append(image_instance)
-
+        images_instances = [Images.objects.create(data=image.get('data'), title=image.get('title')) for image in images_data]
         serializer.save(images=images_instances)
-
 
 class PerevalAddedViewSet(viewsets.ModelViewSet):
     queryset = PerevalAdded.objects.all()
@@ -48,14 +39,9 @@ class PerevalAddedViewSet(viewsets.ModelViewSet):
         level_instance = Level.objects.create(**level_data)
 
         images_data = serializer.validated_data.get('images')
-        images_instances = []
+        images_instances = [Images.objects.create(data=image.get('data'), title=image.get('title')) for image in images_data]
 
-        for image_data in images_data:
-            image_instance = Images.objects.create(data=image_data.get('data'), title=image_data.get('title'))
-            images_instances.append(image_instance)
-
-        pereval_added = serializer.save(user=user_instance, coords=coords_instance, level=level_instance,
-                                        images=images_instances)
+        pereval_added = serializer.save(user=user_instance, coords=coords_instance, level=level_instance, images=images_instances)
 
     @action(detail=False, methods=['post'])
     def submitData(self, request):
@@ -71,16 +57,11 @@ class PerevalAddedViewSet(viewsets.ModelViewSet):
             level_instance = Level.objects.create(**level_data)
 
             images_data = data.get('images')
-            images_instances = []
+            images_instances = [Images.objects.create(data=image.get('data'), title=image.get('title')) for image in images_data]
 
-            for image_data in images_data:
-                image_instance = Images.objects.create(data=image_data.get('data'), title=image_data.get('title'))
-                images_instances.append(image_instance)
+            pereval_added = serializer.save(user=user_instance, coords=coords_instance, level=level_instance, images=images_instances)
 
-            pereval_added = serializer.save(user=user_instance, coords=coords_instance, level=level_instance,
-                                            images=images_instances)
-
-            return Response({"status": 200, "message": "Отправлено успешно", "id": pereval_added.id})
+            return Response({"status": status.HTTP_200_OK, "message": "Отправлено успешно", "id": pereval_added.id})
         else:
-            return Response({"status": 400, "message": "Bad Request (при нехватке полей)", "id": None})
+            return Response({"status": status.HTTP_400_BAD_REQUEST, "message": "Bad Request (при нехватке полей)", "id": None})
 
