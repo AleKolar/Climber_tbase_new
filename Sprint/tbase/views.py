@@ -1,68 +1,80 @@
-from rest_framework.views import APIView
+from rest_framework import viewsets
 from rest_framework.response import Response
-from rest_framework import status
-import requests
-import json
-
-from .models import Images, Coords, User, Level
-from .serializers import PerevalAddedSerializer
+from rest_framework.decorators import action
+from .models import User, Coords, Level, Images, PerevalAdded
+from .serializers import UserSerializer, CoordsSerializer, LevelSerializer, ImagesSerializer, PerevalAddedSerializer
 
 
-class SubmitDataView(APIView):
-    def post(self, request):
-        # Создание объекта User
-        user_data = request.data.get('user')
-        user_email = user_data.get('email')
-        user_instance, created = User.objects.get_or_create(email=user_email, defaults=user_data)
+class UserViewSet(viewsets.ModelViewSet):
+    queryset = User.objects.all()
+    serializer_class = UserSerializer
 
-        # Создание объекта Coords
-        coords_data = request.data.get('coords')
+class CoordsViewSet(viewsets.ModelViewSet):
+    queryset = Coords.objects.all()
+    serializer_class = CoordsSerializer
+
+class LevelViewSet(viewsets.ModelViewSet):
+    queryset = Level.objects.all()
+    serializer_class = LevelSerializer
+
+class ImagesViewSet(viewsets.ModelViewSet):
+    queryset = Images.objects.all()
+    serializer_class = ImagesSerializer
+
+    def perform_create(self, serializer):
+        images_data = serializer.validated_data.get('images')
+        images_instances = []
+
+        for image_data in images_data:
+            image_instance = Images.objects.create(data=image_data.get('data'), title=image_data.get('title'))
+            images_instances.append(image_instance)
+
+        serializer.save(images=images_instances)
+
+class PerevalAddedViewSet(viewsets.ModelViewSet):
+    queryset = PerevalAdded.objects.all()
+    serializer_class = PerevalAddedSerializer
+
+    def perform_create(self, serializer):
+        user_data = serializer.validated_data.get('user')
+        user_instance = User.objects.create(**user_data)
+        coords_data = serializer.validated_data.get('coords')
         coords_instance = Coords.objects.create(**coords_data)
-        coords_instance.save()
-
-        # Создание объектов Images
-        images_data = request.data.get('images')
-        images_instances = [Images.objects.create(**image) for image in images_data]
-        for image_instance in images_instances:
-            image_instance.save()
-
-        # Создание объектов Level
-        level_data = request.data.get('level')
+        level_data = serializer.validated_data.get('level')
         level_instance = Level.objects.create(**level_data)
 
-        # Создание объекта PerevalAdded с использованием email от User
-        pereval_data = request.data
-        pereval_data['user'] = user_email
-        pereval_data['coords'] = coords_instance.pk
+        images_data = serializer.validated_data.get('images')
+        images_instances = []
 
-        pereval_serializer = PerevalAddedSerializer(data=pereval_data)
+        for image_data in images_data:
+            image_instance = Images.objects.create(data=image_data.get('data'), title=image_data.get('title'))
+            images_instances.append(image_instance)
 
-        if pereval_serializer.is_valid():
-            pereval_obj = pereval_serializer.save()
+        pereval_added = serializer.save(user=user_instance, coords=coords_instance, level=level_instance, images=images_instances)
 
-            pereval_obj.images.set(images_instances)
+    @action(detail=False, methods=['post'])
+    def submitData(self, request):
+        data = request.data
+        serializer = PerevalAddedSerializer(data=data)
 
-            pereval_data_for_api = {
-                "beauty_title": pereval_obj.beauty_title,
-                "title": pereval_obj.title,
-                "other_titles": pereval_obj.other_titles,
-                "images": [image.data for image in pereval_obj.images.all()],
-            }
+        if serializer.is_valid():
+            user_data = data.get('user')
+            user_instance = User.objects.create(**user_data)
+            coords_data = data.get('coords')
+            coords_instance = Coords.objects.create(**coords_data)
+            level_data = data.get('level')
+            level_instance = Level.objects.create(**level_data)
 
-            external_api_url = 'http://example.com/api/submit/'
-            headers = {'Content-Type': 'application/json'}
-            response = requests.post(external_api_url, data=json.dumps(pereval_data_for_api), headers=headers)
+            images_data = data.get('images')
+            images_instances = []
 
-            if response.status_code == 200:
-                return Response({'status': 200, 'message': 'Отправлено успешно и на внешний API', 'id': pereval_obj.id},
-                                status=status.HTTP_200_OK)
-            else:
-                return Response({'status': 400, 'message': 'Ошибка при отправке на внешний API', 'id': pereval_obj.id},
-                                status=status.HTTP_400_BAD_REQUEST)
+            for image_data in images_data:
+                image_instance = Images.objects.create(data=image_data.get('data'), title=image_data.get('title'))
+                images_instances.append(image_instance)
+
+            pereval_added = serializer.save(user=user_instance, coords=coords_instance, level=level_instance, images=images_instances)
+
+            return Response({"status": 200, "message": "Отправлено успешно", "id": pereval_added.id})
         else:
-            return Response({'status': 400, 'message': 'Bad Request - Некорректные данные', 'id': None},
-                            status=status.HTTP_400_BAD_REQUEST)
-
-
-
+            return Response({"status": 400, "message": "Bad Request (при нехватке полей)", "id": None})
 

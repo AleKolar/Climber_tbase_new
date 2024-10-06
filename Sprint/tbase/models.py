@@ -27,12 +27,18 @@ class PerevalAdded(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     coords = models.ForeignKey(Coords, on_delete=models.CASCADE)
     level = models.OneToOneField(Level, on_delete=models.CASCADE)
-    status_choices = [('new', 'new'), ('pending', 'pending'), ('accepted', 'accepted'), ('rejected', 'rejected')]
-    status = models.CharField(max_length=10, choices=status_choices, default='new')
+    STATUS_CHOICES = [
+        ('new', 'New'),
+        ('pending', 'Pending'),
+        ('accepted', 'Accepted'),
+        ('rejected', 'Rejected'),
+    ]
+
+    status = models.CharField(max_length=10, choices=STATUS_CHOICES, default='new')
 
 class Images(models.Model):
-    data = models.TextField()
+    data = models.ImageField(upload_to='images/')
     title = models.CharField(max_length=100)
 
-    def __str__(self):
+def __str__(self):
         return self.title
