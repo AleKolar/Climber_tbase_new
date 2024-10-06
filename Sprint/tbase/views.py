@@ -4,7 +4,7 @@ from rest_framework import status
 import requests
 import json
 
-from .models import Images, Coords, User
+from .models import Images, Coords, User, Level
 from .serializers import PerevalAddedSerializer
 
 
@@ -26,6 +26,10 @@ class SubmitDataView(APIView):
         for image_instance in images_instances:
             image_instance.save()
 
+        # Создание объектов Level
+        level_data = request.data.get('level')
+        level_instance = Level.objects.create(**level_data)
+
         # Создание объекта PerevalAdded с использованием email от User
         pereval_data = request.data
         pereval_data['user'] = user_email
@@ -36,10 +40,8 @@ class SubmitDataView(APIView):
         if pereval_serializer.is_valid():
             pereval_obj = pereval_serializer.save()
 
-            # Связывание объектов Images с PerevalAdded
             pereval_obj.images.set(images_instances)
 
-            # Код для отправки данных на внешний API
             pereval_data_for_api = {
                 "beauty_title": pereval_obj.beauty_title,
                 "title": pereval_obj.title,
@@ -60,4 +62,7 @@ class SubmitDataView(APIView):
         else:
             return Response({'status': 400, 'message': 'Bad Request - Некорректные данные', 'id': None},
                             status=status.HTTP_400_BAD_REQUEST)
+
+
+
 
