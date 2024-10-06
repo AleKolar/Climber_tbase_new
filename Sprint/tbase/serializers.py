@@ -63,17 +63,19 @@ class PerevalAddedSerializer(serializers.ModelSerializer):
     def create(self, validated_data):
         user_data = validated_data.pop('user')
         coords_data = validated_data.pop('coords')
+        level_data = validated_data.pop('level')  # Extract level data
         images_data = validated_data.pop('images')
 
         user_instance = User.objects.create(**user_data)
         coords_instance = Coords.objects.create(**coords_data)
+        level_instance = Level.objects.create(**level_data)  # Create Level instance
         images_instances = [Images.objects.create(**image_data) for image_data in images_data]
 
         validated_data['user'] = user_instance
         validated_data['coords'] = coords_instance
+        validated_data['level'] = level_instance  # Assign Level instance
         validated_data['images'] = images_instances
 
         return PerevalAdded.objects.create(**validated_data)
-
 
 
