@@ -55,7 +55,7 @@ class PerevalAddedSerializer(serializers.ModelSerializer):
     coords = CoordsSerializer()
     level = LevelSerializer()
     images = ImagesSerializer(many=True)
-    add_time = serializers.DateTimeField()  # Handle add_time directly as a DateTimeField
+    add_time = serializers.DateTimeField()
 
     class Meta:
         model = PerevalAdded
@@ -67,34 +67,23 @@ class PerevalAddedSerializer(serializers.ModelSerializer):
         level_data = validated_data.pop('level')
         images_data = validated_data.pop('images')
 
-        add_time = validated_data.pop('add_time')  # Retrieve add_time directly as a DateTime value
+        add_time = validated_data.pop('add_time')
         validated_data['add_time'] = add_time
 
-        user_instance = User.objects.create(**user_data)
-        coords_instance = Coords.objects.create(**coords_data)
-        level_instance = Level.objects.create(**level_data)
-        images_instances = [Images.objects.create(**image_data) for image_data in images_data]
+        pereval_added = PerevalAdded.objects.create(**validated_data)  # obj with unique ID
 
-        validated_data['user'] = user_instance
-        validated_data['coords'] = coords_instance
-        validated_data['level'] = level_instance
-        validated_data['images'] = images_instances
+        # 'НАЗНАЧАЕМ' ВСЕМ ID ПЕРЕВАЛА
+        user_instance = User.objects.create(id=pereval_added.id, **user_data)
+        coords_instance = Coords.objects.create(id=pereval_added.id, **coords_data)
+        level_instance = Level.objects.create(id=pereval_added.id, **level_data)
+        images_instances = [Images.objects.create(id=pereval_added.id, **image_data) for image_data in images_data]
 
-        # Construct a dictionary representation of PerevalAdded object
-        pereval_dict = {
-            'beauty_title': validated_data.get('beauty_title'),
-            'title': validated_data.get('title'),
-            'other_titles': validated_data.get('other_titles'),
-            'connect': validated_data.get('connect'),
-            'add_time': add_time,
-            'user': user_data,
-            'coords': coords_data,
-            'level': level_data,
-            'images': images_data
-        }
+        pereval_added.user = user_instance
+        pereval_added.coords = coords_instance
+        pereval_added.level = level_instance
+        pereval_added.save()
 
-        # You can now use pereval_dict as needed before saving PerevalAdded object
+        pereval_added.images.set(images_instances)
 
-        return PerevalAdded.objects.create(**validated_data)
-
+        return pereval_added
 

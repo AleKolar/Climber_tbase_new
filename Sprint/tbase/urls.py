@@ -1,6 +1,6 @@
 from django.urls import path
 from django.contrib import admin
-from django.views.generic import TemplateView
+from django.views.generic import TemplateView, RedirectView
 from drf_yasg.views import get_schema_view
 from drf_yasg import openapi
 
@@ -24,5 +24,7 @@ urlpatterns = [
         extra_context={'schema_url': 'openapi-schema'}
     ), name='swagger-ui'),
     path('openapi-schema/', schema_view.with_ui('redoc', cache_timeout=0), name='schema-redoc'),
+    path('', RedirectView.as_view(url='submit/')),
     path('submit/', SubmitDataView.as_view(), name='submit'),
-]
+
+    ]
