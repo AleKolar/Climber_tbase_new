@@ -25,8 +25,9 @@ class ImagesSerializer(serializers.ModelSerializer):
         model = Images
         fields = ['data', 'title']
 
-
+# drf_writable_nested.serializers НЕ СТАВИТЬСЯ , ХОТЬ СЕРТИФИКАТ СКАЧАН _ РАЗБИРАТЬСЯ, СЕЙЧАС НЕКОГДА !!!
 class PerevalAddedSerializer(serializers.ModelSerializer):
+    add_time = serializers.DateTimeField(read_only=True, format='%Y-%m-%d %H:%M:%S')
     user = UserSerializer()
     coords = CoordsSerializer()
     level = LevelSerializer()
@@ -56,3 +57,9 @@ class PerevalAddedSerializer(serializers.ModelSerializer):
                 raise serializers.ValidationError(f'Отклонено! Статус {instance.get_status_display()}!')
 
         return data
+# user_instance, created = User.objects.get_or_create(**user_data)
+# coords_instance = Coords.objects.create(**coords_data)
+# level_instance = Level.objects.create(**level_data)
+# pereval = PerevalAdded.objects.create(**validateed_data, user=user_instance, coords=coords_instance, level=level_instance)
+# [Images.objects.create(pereval=pereval, **image_data) for image_data in images_data]
+# return pereval

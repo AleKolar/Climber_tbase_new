@@ -2,7 +2,7 @@ from django.db import models
 
 
 class User(models.Model):
-    email = models.EmailField(primary_key=True, unique=True)
+    email = models.EmailField() # primary_key=True, unique=True
     fam = models.CharField(max_length=255)
     name = models.CharField(max_length=255)
     otc = models.CharField(max_length=255)
@@ -41,10 +41,15 @@ class PerevalAdded(models.Model):
     status = models.CharField(max_length=10, choices=STATUS_CHOICES, default='new')
 
 
+# class Images(models.Model):
+#     data = models.ImageField(upload_to='images/')
+#     title = models.CharField(max_length=100)
 class Images(models.Model):
-    data = models.ImageField(upload_to='images/')
+    data = models.TextField()
     title = models.CharField(max_length=100)
+    pereval = models.ForeignKey(PerevalAdded, on_delete=models.CASCADE, related_name='Images')
+
+    def __str__(self):
+        return self.title
 
 
-def __str__(self):
-    return self.title

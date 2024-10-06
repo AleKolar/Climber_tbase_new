@@ -83,3 +83,4 @@ class PerevalAddedViewSet(viewsets.ModelViewSet):
             return Response({"status": 200, "message": "Отправлено успешно", "id": pereval_added.id})
         else:
             return Response({"status": 400, "message": "Bad Request (при нехватке полей)", "id": None})
+
