@@ -55,6 +55,7 @@ class PerevalAddedSerializer(serializers.ModelSerializer):
     coords = CoordsSerializer()
     level = LevelSerializer()
     images = ImagesSerializer(many=True)
+    add_time = serializers.DateTimeField()  # Handle add_time directly as a DateTimeField
 
     class Meta:
         model = PerevalAdded
@@ -63,18 +64,36 @@ class PerevalAddedSerializer(serializers.ModelSerializer):
     def create(self, validated_data):
         user_data = validated_data.pop('user')
         coords_data = validated_data.pop('coords')
-        level_data = validated_data.pop('level')  # Extract level data
+        level_data = validated_data.pop('level')
         images_data = validated_data.pop('images')
+
+        add_time = validated_data.pop('add_time')  # Retrieve add_time directly as a DateTime value
+        validated_data['add_time'] = add_time
 
         user_instance = User.objects.create(**user_data)
         coords_instance = Coords.objects.create(**coords_data)
-        level_instance = Level.objects.create(**level_data)  # Create Level instance
+        level_instance = Level.objects.create(**level_data)
         images_instances = [Images.objects.create(**image_data) for image_data in images_data]
 
         validated_data['user'] = user_instance
         validated_data['coords'] = coords_instance
-        validated_data['level'] = level_instance  # Assign Level instance
+        validated_data['level'] = level_instance
         validated_data['images'] = images_instances
+
+        # Construct a dictionary representation of PerevalAdded object
+        pereval_dict = {
+            'beauty_title': validated_data.get('beauty_title'),
+            'title': validated_data.get('title'),
+            'other_titles': validated_data.get('other_titles'),
+            'connect': validated_data.get('connect'),
+            'add_time': add_time,
+            'user': user_data,
+            'coords': coords_data,
+            'level': level_data,
+            'images': images_data
+        }
+
+        # You can now use pereval_dict as needed before saving PerevalAdded object
 
         return PerevalAdded.objects.create(**validated_data)
 
