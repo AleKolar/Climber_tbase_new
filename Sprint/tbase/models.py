@@ -1,6 +1,5 @@
 from django.db import models
 
-
 class User(models.Model):
     email = models.EmailField(primary_key=True, unique=True)
     fam = models.CharField(max_length=255)
@@ -8,20 +7,16 @@ class User(models.Model):
     otc = models.CharField(max_length=255)
     phone = models.CharField(max_length=20)
 
-
-class Coord(models.Model):
-    latitude = models.FloatField(unique=True)
-    longitude = models.FloatField(unique=True)
-    height = models.IntegerField(unique=True)
-
+class Coords(models.Model):
+    latitude = models.CharField(max_length=20)
+    longitude = models.CharField(max_length=20)
+    height = models.IntegerField()
 
 class Level(models.Model):
     winter = models.CharField(max_length=10)
     summer = models.CharField(max_length=10)
     autumn = models.CharField(max_length=10)
     spring = models.CharField(max_length=10)
-
-
 
 class PerevalAdded(models.Model):
     beauty_title = models.CharField(max_length=255)
@@ -30,11 +25,10 @@ class PerevalAdded(models.Model):
     connect = models.TextField(blank=True)
     add_time = models.DateTimeField()
     user = models.ForeignKey(User, on_delete=models.CASCADE)
-    coords = models.ForeignKey(Coord, on_delete=models.CASCADE)
+    coords = models.ForeignKey(Coords, on_delete=models.CASCADE)
     level = models.OneToOneField(Level, on_delete=models.CASCADE)
-    status = models.CharField(max_length=10, choices=[('new', 'new'), ('pending', 'pending'), ('accepted', 'accepted'),
-                                                      ('rejected', 'rejected')], default='new')
-
+    status_choices = [('new', 'new'), ('pending', 'pending'), ('accepted', 'accepted'), ('rejected', 'rejected')]
+    status = models.CharField(max_length=10, choices=status_choices, default='new')
 
 class Images(models.Model):
     data = models.TextField()

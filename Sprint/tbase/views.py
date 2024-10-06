@@ -4,7 +4,7 @@ from rest_framework import status
 import requests
 import json
 
-from .models import Images, Coord, User
+from .models import Images, Coords, User
 from .serializers import PerevalAddedSerializer
 
 
@@ -17,7 +17,7 @@ class SubmitDataView(APIView):
 
         # Создание объекта Coords
         coords_data = request.data.get('coords')
-        coords_instance = Coord.objects.create(**coords_data)
+        coords_instance = Coords.objects.create(**coords_data)
         coords_instance.save()
 
         # Создание объектов Images
