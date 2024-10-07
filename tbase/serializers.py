@@ -25,13 +25,14 @@ class ImagesSerializer(serializers.ModelSerializer):
         model = Images
         fields = ['data', 'title']
 
+
 # drf_writable_nested.serializers НЕ СТАВИТЬСЯ , ХОТЬ СЕРТИФИКАТ СКАЧАН _ РАЗБИРАТЬСЯ, СЕЙЧАС НЕКОГДА !!!
 class PerevalAddedSerializer(serializers.ModelSerializer):
     add_time = serializers.DateTimeField(read_only=True, format='%Y-%m-%d %H:%M:%S')
     user = UserSerializer()
     coords = CoordsSerializer()
     level = LevelSerializer()
-    images = serializers.ListField(child=serializers.ImageField(), write_only=True)
+    images = ImagesSerializer(many=True)
 
     class Meta:
         model = PerevalAdded
@@ -43,16 +44,14 @@ class PerevalAddedSerializer(serializers.ModelSerializer):
         level_data = validated_data.pop('level')
         images_data = validated_data.pop('images')
 
-        add_time = validated_data.pop('add_time')
-        validated_data['add_time'] = add_time
+        # add_time = validated_data.pop('add_time')
+        # validated_data['add_time'] = add_time
 
         user_instance, created = User.objects.get_or_create(**user_data)
         coords_instance = Coords.objects.create(**coords_data)
         level_instance = Level.objects.create(**level_data)
         pereval = PerevalAdded.objects.create(**validated_data, user=user_instance, coords=coords_instance,
                                               level=level_instance)
-
-        pereval.save()
 
         images_instances = [Images.objects.create(pereval=pereval, **image_data) for image_data in images_data]
 

@@ -27,7 +27,7 @@ class PerevalAdded(models.Model):
     title = models.CharField(max_length=255)
     other_titles = models.CharField(max_length=255)
     connect = models.TextField(blank=True)
-    add_time = models.DateTimeField()
+    add_time = models.DateTimeField(auto_now_add=True)
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     coords = models.ForeignKey(Coords, on_delete=models.CASCADE)
     level = models.OneToOneField(Level, on_delete=models.CASCADE)
@@ -44,7 +44,7 @@ class PerevalAdded(models.Model):
 class Images(models.Model):
     data = models.TextField()
     title = models.CharField(max_length=100)
-    pereval = models.ForeignKey(PerevalAdded, on_delete=models.CASCADE, related_name='Images')
+    pereval = models.ForeignKey(PerevalAdded, on_delete=models.CASCADE, related_name='images')
 
     def __str__(self):
         return self.title

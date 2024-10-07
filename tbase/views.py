@@ -21,27 +21,27 @@ class ImagesViewSet(viewsets.ModelViewSet):
     queryset = Images.objects.all()
     serializer_class = ImagesSerializer
 
-    def perform_create(self, serializer):
-        images_data = serializer.validated_data.get('images')
-        images_instances = [Images.objects.create(data=image.get('data'), title=image.get('title')) for image in images_data]
-        serializer.save(images=images_instances)
+    # def perform_create(self, serializer):
+    #     images_data = serializer.validated_data.get('images')
+    #     images_instances = [Images.objects.create(data=image.get('data'), title=image.get('title')) for image in images_data]
+    #     serializer.save(images=images_instances)
 
 class PerevalAddedViewSet(viewsets.ModelViewSet):
     queryset = PerevalAdded.objects.all()
     serializer_class = PerevalAddedSerializer
 
-    def perform_create(self, serializer):
-        user_data = serializer.validated_data.get('user')
-        user_instance = User.objects.create(**user_data)
-        coords_data = serializer.validated_data.get('coords')
-        coords_instance = Coords.objects.create(**coords_data)
-        level_data = serializer.validated_data.get('level')
-        level_instance = Level.objects.create(**level_data)
-
-        images_data = serializer.validated_data.get('images')
-        images_instances = [Images.objects.create(data=image.get('data'), title=image.get('title')) for image in images_data]
-
-        pereval_added = serializer.save(user=user_instance, coords=coords_instance, level=level_instance, images=images_instances)
+    # def perform_create(self, serializer):
+    #     user_data = serializer.validated_data.get('user')
+    #     user_instance = User.objects.create(**user_data)
+    #     coords_data = serializer.validated_data.get('coords')
+    #     coords_instance = Coords.objects.create(**coords_data)
+    #     level_data = serializer.validated_data.get('level')
+    #     level_instance = Level.objects.create(**level_data)
+    #
+    #     images_data = serializer.validated_data.get('images')
+    #     images_instances = [Images.objects.create(data=image.get('data'), title=image.get('title')) for image in images_data]
+    #
+    #     pereval_added = serializer.save(user=user_instance, coords=coords_instance, level=level_instance, images=images_instances)
 
     @action(detail=False, methods=['post'])
     def submitData(self, request):
