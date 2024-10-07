@@ -21,11 +21,6 @@ class ImagesViewSet(viewsets.ModelViewSet):
     queryset = Images.objects.all()
     serializer_class = ImagesSerializer
 
-    # def perform_create(self, serializer):
-    #     images_data = serializer.validated_data.get('images')
-    #     images_instances = [Images.objects.create(data=image.get('data'), title=image.get('title')) for image in images_data]
-    #     serializer.save(images=images_instances)
-
 class PerevalAddedViewSet(viewsets.ModelViewSet):
     queryset = PerevalAdded.objects.all()
     serializer_class = PerevalAddedSerializer
