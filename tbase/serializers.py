@@ -26,6 +26,9 @@ class ImagesSerializer(serializers.ModelSerializer):
         fields = ['data', 'title']
 
 
+
+# СОЗДАЕМ ЭКЗЕМПЛЯР КЛАССА ИЗ СВЯЗАННЫХ МОДЕЛЕЙ
+# !!! ХОРОШО БЫ ИСПОЛЬЗОВАТЬ : WritableNestedModelSerializer !!!
 # drf_writable_nested.serializers НЕ СТАВИТЬСЯ , ХОТЬ СЕРТИФИКАТ СКАЧАН _ РАЗБИРАТЬСЯ, СЕЙЧАС НЕКОГДА !!!
 class PerevalAddedSerializer(serializers.ModelSerializer):
     add_time = serializers.DateTimeField(read_only=True, format='%Y-%m-%d %H:%M:%S')
@@ -38,14 +41,13 @@ class PerevalAddedSerializer(serializers.ModelSerializer):
         model = PerevalAdded
         fields = ['beauty_title', 'title', 'other_titles', 'connect', 'add_time', 'user', 'coords', 'level', 'images']
 
+    # Извлечение и удаление данных о пользователе из проверенных данных, чтобы корректно обработать,
+    # связанные модели при создании нового экземпляра модели PerevalAdded
     def create(self, validated_data):
         user_data = validated_data.pop('user')
         coords_data = validated_data.pop('coords')
         level_data = validated_data.pop('level')
         images_data = validated_data.pop('images')
-
-        # add_time = validated_data.pop('add_time')
-        # validated_data['add_time'] = add_time
 
         user_instance, created = User.objects.get_or_create(**user_data)
         coords_instance = Coords.objects.create(**coords_data)
@@ -59,6 +61,7 @@ class PerevalAddedSerializer(serializers.ModelSerializer):
 
         return pereval
 
+    # ИДЕНТИФИКАТОР ПОЛЬЗОВАТЕЛЯ _ ЭТО ЕГО EMAIL
     def validate(self, data):
         user_data = data.get('user', None)
         user_email = user_data.get('email') if user_data else None
@@ -66,6 +69,9 @@ class PerevalAddedSerializer(serializers.ModelSerializer):
         if user_email:
             try:
                 user = User.objects.get(email=user_email)
+                for key, value in user_data.items():
+                    setattr(user, key, value)
+                user.save()
             except User.DoesNotExist:
                 user_serializer = UserSerializer(data=user_data)
                 if user_serializer.is_valid():
