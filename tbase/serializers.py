@@ -26,7 +26,6 @@ class ImagesSerializer(serializers.ModelSerializer):
         fields = ['data', 'title']
 
 
-
 # СОЗДАЕМ ЭКЗЕМПЛЯР КЛАССА ИЗ СВЯЗАННЫХ МОДЕЛЕЙ
 # !!! ХОРОШО БЫ ИСПОЛЬЗОВАТЬ : WritableNestedModelSerializer !!!
 # drf_writable_nested.serializers НЕ СТАВИТЬСЯ , ХОТЬ СЕРТИФИКАТ СКАЧАН _ РАЗБИРАТЬСЯ, СЕЙЧАС НЕКОГДА !!!

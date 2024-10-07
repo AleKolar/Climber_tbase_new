@@ -2,7 +2,7 @@ from django.db import models
 
 
 class User(models.Model):
-    email = models.EmailField() # primary_key=True, unique=True
+    email = models.EmailField()  # primary_key=True, unique=True
     fam = models.CharField(max_length=255)
     name = models.CharField(max_length=255)
     otc = models.CharField(max_length=255)
@@ -48,5 +48,3 @@ class Images(models.Model):
 
     def __str__(self):
         return self.title
-
-
