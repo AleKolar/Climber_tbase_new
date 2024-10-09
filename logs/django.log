@@ -334,8 +334,8 @@ Internal Server Error: /submit/
 Traceback (most recent call last):
   File "C:\Users\User\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
     return self.cursor.execute(sql, params)
-psycopg2.errors.NotNullViolation: ОШИБКА:  значение NULL в столбце "pereval_id" отношения "tbase_images" нарушает ограничение NOT NULL
-DETAIL:  Ошибочная строка содержит (1, <картинка1>, Седловина, null).
+psycopg2.errors.NotNullViolation: пїЅпїЅпїЅпїЅпїЅпїЅ:  пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ NULL пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ "pereval_id" пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ "tbase_images" пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ NOT NULL
+DETAIL:  пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ (1, <пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ1>, пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, null).
 
 
 The above exception was the direct cause of the following exception:
@@ -391,8 +391,8 @@ Traceback (most recent call last):
     raise dj_exc_value.with_traceback(traceback) from exc_value
   File "C:\Users\User\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
     return self.cursor.execute(sql, params)
-django.db.utils.IntegrityError: ОШИБКА:  значение NULL в столбце "pereval_id" отношения "tbase_images" нарушает ограничение NOT NULL
-DETAIL:  Ошибочная строка содержит (1, <картинка1>, Седловина, null).
+django.db.utils.IntegrityError: пїЅпїЅпїЅпїЅпїЅпїЅ:  пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ NULL пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ "pereval_id" пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ "tbase_images" пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ NOT NULL
+DETAIL:  пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ (1, <пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ1>, пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, null).
 
 Successfully imported extension module "markdown.extensions.toc".
 Successfully loaded extension "markdown.extensions.toc.TocExtension".
@@ -409,8 +409,8 @@ Internal Server Error: /submit/
 Traceback (most recent call last):
   File "C:\Users\User\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
     return self.cursor.execute(sql, params)
-psycopg2.errors.NotNullViolation: ОШИБКА:  значение NULL в столбце "pereval_id" отношения "tbase_images" нарушает ограничение NOT NULL
-DETAIL:  Ошибочная строка содержит (2, <картинка1>, Седловина, null).
+psycopg2.errors.NotNullViolation: пїЅпїЅпїЅпїЅпїЅпїЅ:  пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ NULL пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ "pereval_id" пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ "tbase_images" пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ NOT NULL
+DETAIL:  пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ (2, <пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ1>, пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, null).
 
 
 The above exception was the direct cause of the following exception:
@@ -466,8 +466,8 @@ Traceback (most recent call last):
     raise dj_exc_value.with_traceback(traceback) from exc_value
   File "C:\Users\User\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
     return self.cursor.execute(sql, params)
-django.db.utils.IntegrityError: ОШИБКА:  значение NULL в столбце "pereval_id" отношения "tbase_images" нарушает ограничение NOT NULL
-DETAIL:  Ошибочная строка содержит (2, <картинка1>, Седловина, null).
+django.db.utils.IntegrityError: пїЅпїЅпїЅпїЅпїЅпїЅ:  пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ NULL пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ "pereval_id" пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ "tbase_images" пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ NOT NULL
+DETAIL:  пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ (2, <пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ1>, пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, null).
 
 Successfully imported extension module "markdown.extensions.toc".
 Successfully loaded extension "markdown.extensions.toc.TocExtension".
@@ -476,8 +476,8 @@ Internal Server Error: /submit/
 Traceback (most recent call last):
   File "C:\Users\User\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
     return self.cursor.execute(sql, params)
-psycopg2.errors.NotNullViolation: ОШИБКА:  значение NULL в столбце "pereval_id" отношения "tbase_images" нарушает ограничение NOT NULL
-DETAIL:  Ошибочная строка содержит (3, <картинка1>, Седловина, null).
+psycopg2.errors.NotNullViolation: пїЅпїЅпїЅпїЅпїЅпїЅ:  пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ NULL пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ "pereval_id" пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ "tbase_images" пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ NOT NULL
+DETAIL:  пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ (3, <пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ1>, пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, null).
 
 
 The above exception was the direct cause of the following exception:
@@ -533,8 +533,8 @@ Traceback (most recent call last):
     raise dj_exc_value.with_traceback(traceback) from exc_value
   File "C:\Users\User\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
     return self.cursor.execute(sql, params)
-django.db.utils.IntegrityError: ОШИБКА:  значение NULL в столбце "pereval_id" отношения "tbase_images" нарушает ограничение NOT NULL
-DETAIL:  Ошибочная строка содержит (3, <картинка1>, Седловина, null).
+django.db.utils.IntegrityError: пїЅпїЅпїЅпїЅпїЅпїЅ:  пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ NULL пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ "pereval_id" пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ "tbase_images" пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ NOT NULL
+DETAIL:  пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ (3, <пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ1>, пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, null).
 
 Successfully imported extension module "markdown.extensions.toc".
 Successfully loaded extension "markdown.extensions.toc.TocExtension".
@@ -825,3 +825,12 @@ Watching for file changes with StatReloader
 Watching for file changes with StatReloader
 Watching for file changes with StatReloader
 Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Successfully imported extension module "markdown.extensions.toc".
+Successfully loaded extension "markdown.extensions.toc.TocExtension".
+Successfully imported extension module "markdown.extensions.toc".
+Successfully loaded extension "markdown.extensions.toc.TocExtension".
+Successfully imported extension module "markdown.extensions.toc".
+Successfully loaded extension "markdown.extensions.toc.TocExtension".
+Successfully imported extension module "markdown.extensions.toc".
+Successfully loaded extension "markdown.extensions.toc.TocExtension".
