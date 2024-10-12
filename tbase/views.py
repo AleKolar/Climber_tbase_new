@@ -1,4 +1,5 @@
-from rest_framework import viewsets, status
+from django.shortcuts import render
+from rest_framework import viewsets, status, serializers
 from rest_framework.response import Response
 from rest_framework.decorators import action
 from .models import User, Coords, Level, Images, PerevalAdded
@@ -29,6 +30,19 @@ class PerevalAddedViewSet(viewsets.ModelViewSet):
     queryset = PerevalAdded.objects.all()
     serializer_class = PerevalAddedSerializer
 
+    @action(detail=True, methods=['get'])
+    def retrieve_perevaladded_object(self, request):
+        id = request.query_params.get('id')
+        if id:
+            try:
+                perevaladded_item = PerevalAdded.objects.get(id=id)
+                serializer = PerevalAddedSerializer(perevaladded_item)
+                return Response(serializer.data, status=status.HTTP_200_OK)
+            except PerevalAdded.DoesNotExist:
+                return Response({"message": "PerevalAddedItem not found"}, status=status.HTTP_404_NOT_FOUND)
+        else:
+            return Response({"message": "Please provide an id"}, status=status.HTTP_400_BAD_REQUEST)
+
     # ОПРЕДЕЛЯЕМ МЕТОД SubmitData ВНУТРИ КОНТРОЛЛЕРА
     # Извлечение данных, создание экземпляров соответствующих моделей, сохранение экземпляра PerevalAdded со связанными моделями
     @action(detail=False, methods=['post'])  # метод submitData является действием (action) для контроллера
@@ -55,3 +69,5 @@ class PerevalAddedViewSet(viewsets.ModelViewSet):
         else:
             return Response(
                 {"status": status.HTTP_400_BAD_REQUEST, "message": "Bad Request (при нехватке полей)", "id": None})
+
+

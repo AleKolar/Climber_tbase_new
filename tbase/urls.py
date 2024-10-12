@@ -26,10 +26,17 @@ router.register('levels', LevelViewSet)
 router.register('images', ImagesViewSet)
 router.register('perevaladded', PerevalAddedViewSet)
 
+
+
 urlpatterns = [
     path('swagger/', schema_view, name='schema-swagger-ui'),
     path('redoc/', schema_view, name='schema-redoc'),
     path('submit/', PerevalAddedViewSet.as_view({'post': 'submitData'}), name='submit'),
     # path('', RedirectView.as_view(url='submit/')),
     path('', include(router.urls)),
+    path('perevaladded/', PerevalAddedViewSet.as_view({'get': 'retrieve_perevaladded_object'}), name='perevaladded-detail'),
+
+
 ]
+
+
