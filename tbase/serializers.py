@@ -38,7 +38,7 @@ class PerevalAddedSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = PerevalAdded
-        fields = ['beauty_title', 'title', 'other_titles', 'connect', 'add_time', 'user', 'coords', 'level', 'images']
+        fields = ['url','beauty_title', 'title', 'other_titles', 'connect', 'add_time', 'user', 'coords', 'level', 'images']
 
     # Извлечение и удаление данных о пользователе из проверенных данных, чтобы корректно обработать,
     # связанные модели при создании нового экземпляра модели PerevalAdded

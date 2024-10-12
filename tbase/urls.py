@@ -28,6 +28,7 @@ router.register('perevaladded', PerevalAddedViewSet)
 
 
 
+
 urlpatterns = [
     path('swagger/', schema_view, name='schema-swagger-ui'),
     path('redoc/', schema_view, name='schema-redoc'),
