@@ -4969,3 +4969,1110 @@ C:\Users\User\PycharmProjects\Postgresql_DB\Sprint\tbase\views.py changed, reloa
 Watching for file changes with StatReloader
 C:\Users\User\PycharmProjects\Postgresql_DB\Sprint\tbase\views.py changed, reloading.
 Watching for file changes with StatReloader
+Not Found: /perevaladded/40/
+Not Found: /perevaladded/14/
+Not Found: /perevaladded/14/
+Not Found: /perevaladded/1/
+Not Found: /submit/26/
+Method Not Allowed: /patch/26/
+C:\Users\User\PycharmProjects\Postgresql_DB\Sprint\tbase\views.py changed, reloading.
+Watching for file changes with StatReloader
+Method Not Allowed: /patch/26/
+Method Not Allowed: /patch/26/
+Method Not Allowed: /patch/26/
+Method Not Allowed: /patch/26/
+C:\Users\User\PycharmProjects\Postgresql_DB\Sprint\tbase\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /patch/26/
+Traceback (most recent call last):
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+TypeError: PerevalAddedViewSet.submitDataUpdate() got an unexpected keyword argument 'id'
+C:\Users\User\PycharmProjects\Postgresql_DB\Sprint\tbase\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /patch/26/
+Traceback (most recent call last):
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+TypeError: PerevalAddedViewSet.retrieve_perevaladded_object() got an unexpected keyword argument 'id'
+Internal Server Error: /patch/26/
+Traceback (most recent call last):
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+TypeError: PerevalAddedViewSet.retrieve_perevaladded_object() got an unexpected keyword argument 'id'
+Internal Server Error: /patch/26/
+Traceback (most recent call last):
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+TypeError: PerevalAddedViewSet.retrieve_perevaladded_object() got an unexpected keyword argument 'id'
+C:\Users\User\PycharmProjects\Postgresql_DB\Sprint\tbase\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\User\PycharmProjects\Postgresql_DB\Sprint\tbase\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /patch/26/
+Traceback (most recent call last):
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\Sprint\tbase\views.py", line 54, in submitDataUpdate
+    return Response(serializer.data)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\serializers.py", line 571, in data
+    ret = super().data
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\serializers.py", line 249, in data
+    self._data = self.to_representation(self.instance)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\serializers.py", line 538, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\relations.py", line 373, in to_representation
+    assert 'request' in self.context, (
+AssertionError: `HyperlinkedIdentityField` requires the request in the serializer context. Add `context={'request': request}` when instantiating the serializer.
+C:\Users\User\PycharmProjects\Postgresql_DB\Sprint\tbase\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\User\PycharmProjects\Postgresql_DB\Sprint\tbase\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /patch/26/
+Traceback (most recent call last):
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.NotNullViolation: ОШИБКА:  значение NULL в столбце "pereval_id" отношения "tbase_images" нарушает ограничение NOT NULL
+DETAIL:  Ошибочная строка содержит (66, 7, 8, null).
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\Sprint\tbase\views.py", line 59, in submitDataUpdate
+    serializer.save()
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\serializers.py", line 203, in save
+    self.instance = self.update(self.instance, validated_data)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\Sprint\tbase\serializers.py", line 99, in update
+    new_image_instance = Images.objects.create(data=image_data.get('data'), title=image_data.get('title'))
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\models\query.py", line 679, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\models\base.py", line 891, in save
+    self.save_base(
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\models\base.py", line 997, in save_base
+    updated = self._save_table(
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\models\base.py", line 1160, in _save_table
+    results = self._do_insert(
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\models\base.py", line 1201, in _do_insert
+    return manager._insert(
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\models\sql\compiler.py", line 1836, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.IntegrityError: ОШИБКА:  значение NULL в столбце "pereval_id" отношения "tbase_images" нарушает ограничение NOT NULL
+DETAIL:  Ошибочная строка содержит (66, 7, 8, null).
+
+C:\Users\User\PycharmProjects\Postgresql_DB\Sprint\tbase\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /email/Webhook@yandex.ru/
+Traceback (most recent call last):
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+TypeError: PerevalAddedViewSet.submitDataByEmail() got an unexpected keyword argument 'email'
+Internal Server Error: /email/Webhook@yandex.ru/
+Traceback (most recent call last):
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+TypeError: PerevalAddedViewSet.submitDataByEmail() got an unexpected keyword argument 'email'
+C:\Users\User\PycharmProjects\Postgresql_DB\Sprint\tbase\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\User\PycharmProjects\Postgresql_DB\Sprint\tbase\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /perevaladded/26/
+Traceback (most recent call last):
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.NotNullViolation: ОШИБКА:  значение NULL в столбце "pereval_id" отношения "tbase_images" нарушает ограничение NOT NULL
+DETAIL:  Ошибочная строка содержит (67, 743, 843, null).
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\mixins.py", line 82, in partial_update
+    return self.update(request, *args, **kwargs)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\mixins.py", line 68, in update
+    self.perform_update(serializer)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\mixins.py", line 78, in perform_update
+    serializer.save()
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\serializers.py", line 203, in save
+    self.instance = self.update(self.instance, validated_data)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\Sprint\tbase\serializers.py", line 99, in update
+    new_image_instance = Images.objects.create(data=image_data.get('data'), title=image_data.get('title'))
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\models\query.py", line 679, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\models\base.py", line 891, in save
+    self.save_base(
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\models\base.py", line 997, in save_base
+    updated = self._save_table(
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\models\base.py", line 1160, in _save_table
+    results = self._do_insert(
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\models\base.py", line 1201, in _do_insert
+    return manager._insert(
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\models\sql\compiler.py", line 1836, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.IntegrityError: ОШИБКА:  значение NULL в столбце "pereval_id" отношения "tbase_images" нарушает ограничение NOT NULL
+DETAIL:  Ошибочная строка содержит (67, 743, 843, null).
+
+C:\Users\User\PycharmProjects\Postgresql_DB\Sprint\tbase\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\User\PycharmProjects\Postgresql_DB\Sprint\tbase\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\User\PycharmProjects\Postgresql_DB\Sprint\tbase\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\User\PycharmProjects\Postgresql_DB\Sprint\tbase\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /patch/26/
+Traceback (most recent call last):
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\Sprint\tbase\views.py", line 59, in submitDataUpdate
+    serializer.save()
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\serializers.py", line 203, in save
+    self.instance = self.update(self.instance, validated_data)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\Sprint\tbase\serializers.py", line 101, in update
+    raise ValueError("Отсутствует идентификатор изображения. Обновление не выполнено.")
+ValueError: Отсутствует идентификатор изображения. Обновление не выполнено.
+C:\Users\User\PycharmProjects\Postgresql_DB\Sprint\tbase\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /patch/26/
+Traceback (most recent call last):
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\Sprint\tbase\views.py", line 59, in submitDataUpdate
+    serializer.save()
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\serializers.py", line 203, in save
+    self.instance = self.update(self.instance, validated_data)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\Sprint\tbase\serializers.py", line 106, in update
+    raise ValueError("Отсутствует идентификатор изображения. Обновление не выполнено.")
+ValueError: Отсутствует идентификатор изображения. Обновление не выполнено.
+C:\Users\User\PycharmProjects\Postgresql_DB\Sprint\tbase\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /patch/26/
+Traceback (most recent call last):
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\Sprint\tbase\views.py", line 59, in submitDataUpdate
+    serializer.save()
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\serializers.py", line 203, in save
+    self.instance = self.update(self.instance, validated_data)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\Sprint\tbase\serializers.py", line 108, in update
+    raise ValueError('Отсутствует идентификатор изображения. Обновление не выполнено.')
+ValueError: Отсутствует идентификатор изображения. Обновление не выполнено.
+Watching for file changes with StatReloader
+Method Not Allowed: /submit/
+Method Not Allowed: /submit/
+Internal Server Error: /submit/
+Traceback (most recent call last):
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.NotNullViolation: ОШИБКА:  значение NULL в столбце "pereval_id" отношения "tbase_images" нарушает ограничение NOT NULL
+DETAIL:  Ошибочная строка содержит (70, 743, 843, null).
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\Sprint\tbase\views.py", line 106, in submitData
+    images_instances = [Images.objects.create(data=image.get('data'), title=image.get('title')) for image in
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\Sprint\tbase\views.py", line 106, in <listcomp>
+    images_instances = [Images.objects.create(data=image.get('data'), title=image.get('title')) for image in
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\models\query.py", line 679, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\models\base.py", line 891, in save
+    self.save_base(
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\models\base.py", line 997, in save_base
+    updated = self._save_table(
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\models\base.py", line 1160, in _save_table
+    results = self._do_insert(
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\models\base.py", line 1201, in _do_insert
+    return manager._insert(
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\models\sql\compiler.py", line 1836, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.IntegrityError: ОШИБКА:  значение NULL в столбце "pereval_id" отношения "tbase_images" нарушает ограничение NOT NULL
+DETAIL:  Ошибочная строка содержит (70, 743, 843, null).
+
+Internal Server Error: /patch/26/
+Traceback (most recent call last):
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\Sprint\tbase\views.py", line 59, in submitDataUpdate
+    serializer.save()
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\serializers.py", line 203, in save
+    self.instance = self.update(self.instance, validated_data)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\Sprint\tbase\serializers.py", line 108, in update
+    raise ValueError('Отсутствует идентификатор изображения. Обновление не выполнено.')
+ValueError: Отсутствует идентификатор изображения. Обновление не выполнено.
+C:\Users\User\PycharmProjects\Postgresql_DB\Sprint\tbase\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /patch/26/
+Traceback (most recent call last):
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\Sprint\tbase\views.py", line 59, in submitDataUpdate
+    serializer.save()
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\serializers.py", line 203, in save
+    self.instance = self.update(self.instance, validated_data)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\Sprint\tbase\serializers.py", line 107, in update
+    raise ValueError('Отсутствует идентификатор изображения. Обновление не выполнено.')
+ValueError: Отсутствует идентификатор изображения. Обновление не выполнено.
+C:\Users\User\PycharmProjects\Postgresql_DB\Sprint\tbase\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /patch/26/
+Traceback (most recent call last):
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\Sprint\tbase\views.py", line 59, in submitDataUpdate
+    serializer.save()
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\serializers.py", line 203, in save
+    self.instance = self.update(self.instance, validated_data)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\Sprint\tbase\serializers.py", line 108, in update
+    raise ValueError('Отсутствует идентификатор изображения. Обновление не выполнено.')
+ValueError: Отсутствует идентификатор изображения. Обновление не выполнено.
+C:\Users\User\PycharmProjects\Postgresql_DB\Sprint\tbase\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\User\PycharmProjects\Postgresql_DB\Sprint\tbase\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\User\PycharmProjects\Postgresql_DB\Sprint\tbase\views.py changed, reloading.
+Watching for file changes with StatReloader
+Method Not Allowed: /submit/
+Not Found: /submit/14/
+Method Not Allowed: /submit/
+Method Not Allowed: /submit/
+Internal Server Error: /submit/
+Traceback (most recent call last):
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.NotNullViolation: ОШИБКА:  значение NULL в столбце "pereval_id" отношения "tbase_images" нарушает ограничение NOT NULL
+DETAIL:  Ошибочная строка содержит (85, 743, 843, null).
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\Sprint\tbase\views.py", line 99, in submitData
+    images_instances = [Images.objects.create(data=image.get('data'), title=image.get('title')) for image in
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\Sprint\tbase\views.py", line 99, in <listcomp>
+    images_instances = [Images.objects.create(data=image.get('data'), title=image.get('title')) for image in
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\models\query.py", line 679, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\models\base.py", line 891, in save
+    self.save_base(
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\models\base.py", line 997, in save_base
+    updated = self._save_table(
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\models\base.py", line 1160, in _save_table
+    results = self._do_insert(
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\models\base.py", line 1201, in _do_insert
+    return manager._insert(
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\models\sql\compiler.py", line 1836, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.IntegrityError: ОШИБКА:  значение NULL в столбце "pereval_id" отношения "tbase_images" нарушает ограничение NOT NULL
+DETAIL:  Ошибочная строка содержит (85, 743, 843, null).
+
+Method Not Allowed: /submit/
+C:\Users\User\PycharmProjects\Postgresql_DB\Sprint\tbase\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\User\PycharmProjects\Postgresql_DB\Sprint\tbase\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /submit/
+Traceback (most recent call last):
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\Sprint\tbase\views.py", line 102, in submitData
+    images_instances = [
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\Sprint\tbase\views.py", line 103, in <listcomp>
+    Images.objects.create(data=image.get('data'), title=image.get('title'), pereval=serializer) for image
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\models\query.py", line 677, in create
+    obj = self.model(**kwargs)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\models\base.py", line 543, in __init__
+    _setattr(self, field.name, rel_obj)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\models\fields\related_descriptors.py", line 287, in __set__
+    raise ValueError(
+ValueError: Cannot assign "PerevalAddedSerializer(data={'beauty_title': 'Большой', 'title': 'Высокая', 'other_titles': 'Широкая', 'connect': 'Устойчивое', 'user': {'email': 'New_Book@yandex.ru', 'fam': 'Бен', 'name': 'Джонсон', 'otc': 'Иммануилович', 'phone': '+9 999 44 33'}, 'coords': {'latitude': '105.39', 'longitude': '107.17', 'height': 2233}, 'level': {'winter': '5A', 'summer': '5А', 'autumn': '5А', 'spring': '5A'}, 'images': [{'data': '743', 'title': '843'}, {'data': '744', 'title': '844'}]}):
+    id = IntegerField(label='ID', read_only=True)
+    url = HyperlinkedIdentityField(view_name='perevaladded-detail')
+    beauty_title = CharField(max_length=255)
+    title = CharField(max_length=255)
+    other_titles = CharField(max_length=255)
+    connect = CharField(allow_blank=True, required=False, style={'base_template': 'textarea.html'})
+    add_time = DateTimeField(format='%Y-%m-%d %H:%M:%S', read_only=True)
+    user = UserSerializer():
+        id = IntegerField(label='ID', read_only=True)
+        email = EmailField(max_length=254)
+        fam = CharField(max_length=255)
+        name = CharField(max_length=255)
+        otc = CharField(max_length=255)
+        phone = CharField(max_length=20)
+    coords = CoordsSerializer():
+        id = IntegerField(label='ID', read_only=True)
+        latitude = CharField(max_length=20)
+        longitude = CharField(max_length=20)
+        height = IntegerField(max_value=2147483647, min_value=-2147483648)
+    level = LevelSerializer():
+        id = IntegerField(label='ID', read_only=True)
+        winter = CharField(max_length=10)
+        summer = CharField(max_length=10)
+        autumn = CharField(max_length=10)
+        spring = CharField(max_length=10)
+    images = ImagesSerializer(many=True):
+        data = CharField(style={'base_template': 'textarea.html'})
+        title = CharField(max_length=100)": "Images.pereval" must be a "PerevalAdded" instance.
+C:\Users\User\PycharmProjects\Postgresql_DB\Sprint\tbase\views.py changed, reloading.
+Watching for file changes with StatReloader
+Method Not Allowed: /submit/
+Internal Server Error: /submit/
+Traceback (most recent call last):
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.NotNullViolation: ОШИБКА:  значение NULL в столбце "pereval_id" отношения "tbase_images" нарушает ограничение NOT NULL
+DETAIL:  Ошибочная строка содержит (86, 743, 843, null).
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\Sprint\tbase\views.py", line 93, in submitData
+    images_instances = [Images.objects.create(data=image.get('data'), title=image.get('title')) for image in
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\Sprint\tbase\views.py", line 93, in <listcomp>
+    images_instances = [Images.objects.create(data=image.get('data'), title=image.get('title')) for image in
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\models\query.py", line 679, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\models\base.py", line 891, in save
+    self.save_base(
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\models\base.py", line 997, in save_base
+    updated = self._save_table(
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\models\base.py", line 1160, in _save_table
+    results = self._do_insert(
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\models\base.py", line 1201, in _do_insert
+    return manager._insert(
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\models\sql\compiler.py", line 1836, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.IntegrityError: ОШИБКА:  значение NULL в столбце "pereval_id" отношения "tbase_images" нарушает ограничение NOT NULL
+DETAIL:  Ошибочная строка содержит (86, 743, 843, null).
+
+C:\Users\User\PycharmProjects\Postgresql_DB\Sprint\tbase\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\User\PycharmProjects\Postgresql_DB\Sprint\tbase\views.py changed, reloading.
+Watching for file changes with StatReloader
+Method Not Allowed: /submit/
+Internal Server Error: /submit/
+Traceback (most recent call last):
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\Sprint\tbase\views.py", line 94, in submitData
+    pereval_added = serializer.save(user=user_instance, coords=coords_instance, level=level_instance)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\serializers.py", line 208, in save
+    self.instance = self.create(validated_data)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\Sprint\tbase\serializers.py", line 51, in create
+    user_instance, created = User.objects.get_or_create(**user_data)
+TypeError: django.db.models.query.QuerySet.get_or_create() argument after ** must be a mapping, not User
+C:\Users\User\PycharmProjects\Postgresql_DB\Sprint\tbase\views.py changed, reloading.
+Watching for file changes with StatReloader
+Method Not Allowed: /submit/
+Internal Server Error: /submit/
+Traceback (most recent call last):
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\Sprint\tbase\views.py", line 86, in submitData
+    user_instance, _ = User.objects.get_or_create(defaults=user_data, **user_data)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\models\query.py", line 948, in get_or_create
+    return self.get(**kwargs), False
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\models\query.py", line 652, in get
+    raise self.model.MultipleObjectsReturned(
+tbase.models.User.MultipleObjectsReturned: get() returned more than one User -- it returned 3!
+Method Not Allowed: /submit/
+Internal Server Error: /submit/
+Traceback (most recent call last):
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\Sprint\tbase\views.py", line 89, in submitData
+    coords_instance, _ = Coords.objects.get_or_create(defaults=coords_data, **coords_data)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\models\query.py", line 948, in get_or_create
+    return self.get(**kwargs), False
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\models\query.py", line 652, in get
+    raise self.model.MultipleObjectsReturned(
+tbase.models.Coords.MultipleObjectsReturned: get() returned more than one Coords -- it returned 5!
+C:\Users\User\PycharmProjects\Postgresql_DB\Sprint\tbase\views.py changed, reloading.
+Watching for file changes with StatReloader
+Method Not Allowed: /submit/
+Internal Server Error: /submit/
+Traceback (most recent call last):
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.NotNullViolation: ОШИБКА:  значение NULL в столбце "pereval_id" отношения "tbase_images" нарушает ограничение NOT NULL
+DETAIL:  Ошибочная строка содержит (87, 743, 843, null).
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\Sprint\tbase\views.py", line 93, in submitData
+    images_instances = [Images.objects.create(data=image.get('data'), title=image.get('title')) for image in
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\Sprint\tbase\views.py", line 93, in <listcomp>
+    images_instances = [Images.objects.create(data=image.get('data'), title=image.get('title')) for image in
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\models\query.py", line 679, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\models\base.py", line 891, in save
+    self.save_base(
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\models\base.py", line 997, in save_base
+    updated = self._save_table(
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\models\base.py", line 1160, in _save_table
+    results = self._do_insert(
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\models\base.py", line 1201, in _do_insert
+    return manager._insert(
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\models\sql\compiler.py", line 1836, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.IntegrityError: ОШИБКА:  значение NULL в столбце "pereval_id" отношения "tbase_images" нарушает ограничение NOT NULL
+DETAIL:  Ошибочная строка содержит (87, 743, 843, null).
+
+Method Not Allowed: /submit/
+Method Not Allowed: /submit/
+Internal Server Error: /submit/
+Traceback (most recent call last):
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.NotNullViolation: ОШИБКА:  значение NULL в столбце "pereval_id" отношения "tbase_images" нарушает ограничение NOT NULL
+DETAIL:  Ошибочная строка содержит (92, 743, 843, null).
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\Sprint\tbase\views.py", line 93, in submitData
+    images_instances = [Images.objects.create(data=image.get('data'), title=image.get('title')) for image in
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\Sprint\tbase\views.py", line 93, in <listcomp>
+    images_instances = [Images.objects.create(data=image.get('data'), title=image.get('title')) for image in
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\models\query.py", line 679, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\models\base.py", line 891, in save
+    self.save_base(
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\models\base.py", line 997, in save_base
+    updated = self._save_table(
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\models\base.py", line 1160, in _save_table
+    results = self._do_insert(
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\models\base.py", line 1201, in _do_insert
+    return manager._insert(
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\models\sql\compiler.py", line 1836, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.IntegrityError: ОШИБКА:  значение NULL в столбце "pereval_id" отношения "tbase_images" нарушает ограничение NOT NULL
+DETAIL:  Ошибочная строка содержит (92, 743, 843, null).
+
+C:\Users\User\PycharmProjects\Postgresql_DB\Sprint\tbase\views.py changed, reloading.
+Watching for file changes with StatReloader
+Method Not Allowed: /submit/
+Internal Server Error: /submit/
+Traceback (most recent call last):
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.NotNullViolation: ОШИБКА:  значение NULL в столбце "pereval_id" отношения "tbase_images" нарушает ограничение NOT NULL
+DETAIL:  Ошибочная строка содержит (93, 743, 843, null).
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\Sprint\tbase\views.py", line 92, in submitData
+    images_instances = [Images.objects.create(data=image.get('data'), title=image.get('title')) for image in
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\Sprint\tbase\views.py", line 92, in <listcomp>
+    images_instances = [Images.objects.create(data=image.get('data'), title=image.get('title')) for image in
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\models\query.py", line 679, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\models\base.py", line 891, in save
+    self.save_base(
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\models\base.py", line 997, in save_base
+    updated = self._save_table(
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\models\base.py", line 1160, in _save_table
+    results = self._do_insert(
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\models\base.py", line 1201, in _do_insert
+    return manager._insert(
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\models\sql\compiler.py", line 1836, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.IntegrityError: ОШИБКА:  значение NULL в столбце "pereval_id" отношения "tbase_images" нарушает ограничение NOT NULL
+DETAIL:  Ошибочная строка содержит (93, 743, 843, null).
+
+C:\Users\User\PycharmProjects\Postgresql_DB\Sprint\tbase\views.py changed, reloading.
+Watching for file changes with StatReloader
+Method Not Allowed: /submit/
+Internal Server Error: /submit/
+Traceback (most recent call last):
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.NotNullViolation: ОШИБКА:  значение NULL в столбце "pereval_id" отношения "tbase_images" нарушает ограничение NOT NULL
+DETAIL:  Ошибочная строка содержит (94, 743, 843, null).
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\Sprint\tbase\views.py", line 92, in submitData
+    images_instances = [Images.objects.create(data=image.get('data'), title=image.get('title')) for image in
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\Sprint\tbase\views.py", line 92, in <listcomp>
+    images_instances = [Images.objects.create(data=image.get('data'), title=image.get('title')) for image in
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\models\query.py", line 679, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\models\base.py", line 891, in save
+    self.save_base(
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\models\base.py", line 997, in save_base
+    updated = self._save_table(
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\models\base.py", line 1160, in _save_table
+    results = self._do_insert(
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\models\base.py", line 1201, in _do_insert
+    return manager._insert(
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\models\sql\compiler.py", line 1836, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\User\PycharmProjects\Postgresql_DB\venv\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.IntegrityError: ОШИБКА:  значение NULL в столбце "pereval_id" отношения "tbase_images" нарушает ограничение NOT NULL
+DETAIL:  Ошибочная строка содержит (94, 743, 843, null).
+
+C:\Users\User\PycharmProjects\Postgresql_DB\Sprint\tbase\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\User\PycharmProjects\Postgresql_DB\Sprint\tbase\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /submit/

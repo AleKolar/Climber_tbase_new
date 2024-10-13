@@ -43,41 +43,27 @@ class PerevalAddedViewSet(viewsets.ModelViewSet):
         else:
             return Response({"message": "Please provide an id"}, status=status.HTTP_400_BAD_REQUEST)
 
-    @action(detail=True, methods=['patch'])
-    def submitDataUpdate(self, request):
-        id = request.query_params.get('id')
+    @action(detail=True, methods=['get', 'patch'])
+    def submitDataUpdate(self, request, **kwargs):
+        id = kwargs.get('id')
         if id:
             try:
                 instance = PerevalAdded.objects.get(id=id)
-                serializer = PerevalAddedSerializer(instance, data=request.data, partial=True)
-                if serializer.is_valid():
-                    new_data = {k: v for k, v in serializer.validated_data.items() if k in request.data}
-                    new_instance = PerevalAdded.objects.create(**new_data)
-                    return Response({"status": status.HTTP_200_OK, "message": "Объект успешно обновлен"})
-                else:
-                    return Response({"status": status.HTTP_400_BAD_REQUEST, "message": serializer.errors})
+                if request.method == 'GET':
+                    serializer = PerevalAddedSerializer(instance, context={'request': request})
+                    return Response(serializer.data)
+                elif request.method == 'PATCH':
+                    serializer = PerevalAddedSerializer(instance, data=request.data, partial=True,
+                                                        context={'request': request})
+                    if serializer.is_valid():
+                        serializer.save()
+                        return Response({"status": status.HTTP_200_OK, "message": "Объект успешно обновлен"})
+                    else:
+                        return Response({"status": status.HTTP_400_BAD_REQUEST, "message": serializer.errors})
             except PerevalAdded.DoesNotExist:
                 return Response({"status": status.HTTP_404_NOT_FOUND, "message": "Объект не найден"})
         else:
             return Response({"status": status.HTTP_400_BAD_REQUEST, "message": "Не указан 'id' в параметрах запроса"})
-
-
-
-
-
-
-
-
-
-    @action(detail=False, methods=['get'])
-    def submitDataByEmail(self, request):
-        email = request.query_params.get('user__email')
-        if email:
-            perevaladded_items = PerevalAdded.objects.filter(user__email=email)
-            serializer = PerevalAddedSerializer(perevaladded_items, many=True)
-            return Response(serializer.data, status=status.HTTP_200_OK)
-        else:
-            return Response({"message": "Please provide an email"}, status=status.HTTP_400_BAD_REQUEST)
 
     @action(detail=False, methods=['get'])
     def submitDataByEmail(self, request, email=None):
@@ -87,18 +73,6 @@ class PerevalAddedViewSet(viewsets.ModelViewSet):
             return Response(serializer.data, status=status.HTTP_200_OK)
         else:
             return Response({"message": "Введите email пользователя в URL"}, status=status.HTTP_400_BAD_REQUEST)
-
-
-
-
-
-
-
-
-
-
-
-
 
     # ОПРЕДЕЛЯЕМ МЕТОД SubmitData ВНУТРИ КОНТРОЛЛЕРА
     # Извлечение данных, создание экземпляров соответствующих моделей, сохранение экземпляра PerevalAdded со связанными моделями
@@ -126,5 +100,3 @@ class PerevalAddedViewSet(viewsets.ModelViewSet):
         else:
             return Response(
                 {"status": status.HTTP_400_BAD_REQUEST, "message": "Bad Request (при нехватке полей)", "id": None})
-
-
