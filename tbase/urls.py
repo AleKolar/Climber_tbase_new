@@ -38,8 +38,8 @@ urlpatterns = [
     path('perevaladded/', PerevalAddedViewSet.as_view({'get': 'retrieve_perevaladded_object'}), name='perevaladded-detail'),
     path('email/', PerevalAddedViewSet.as_view({'get': 'submitDataByEmail'}), name='submit-by-email'),
     path('', include(router.urls)),
-    path('patch/<int:id>/', PerevalAddedViewSet.as_view({'get': 'retrieve_perevaladded_object'}), name='perevaladded-detail'),
-
+    path('patch/', PerevalAddedViewSet.as_view({'patch': 'submitDataUpdate'}), name='perevaladded-detail'),
+    path('email/<str:email>/', PerevalAddedViewSet.as_view({'get': 'submitDataByEmail'}), name='submit-by-email'),
 ]
 
 

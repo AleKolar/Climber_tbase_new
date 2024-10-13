@@ -44,7 +44,7 @@ class PerevalAddedViewSet(viewsets.ModelViewSet):
             return Response({"message": "Please provide an id"}, status=status.HTTP_400_BAD_REQUEST)
 
     @action(detail=True, methods=['patch'])
-    def submitData(self, request):
+    def submitDataUpdate(self, request):
         id = request.query_params.get('id')
         if id:
             try:
@@ -61,6 +61,14 @@ class PerevalAddedViewSet(viewsets.ModelViewSet):
         else:
             return Response({"status": status.HTTP_400_BAD_REQUEST, "message": "Не указан 'id' в параметрах запроса"})
 
+
+
+
+
+
+
+
+
     @action(detail=False, methods=['get'])
     def submitDataByEmail(self, request):
         email = request.query_params.get('user__email')
@@ -70,6 +78,26 @@ class PerevalAddedViewSet(viewsets.ModelViewSet):
             return Response(serializer.data, status=status.HTTP_200_OK)
         else:
             return Response({"message": "Please provide an email"}, status=status.HTTP_400_BAD_REQUEST)
+
+    @action(detail=False, methods=['get'])
+    def submitDataByEmail(self, request, email=None):
+        if email:
+            perevaladded_items = PerevalAdded.objects.filter(user__email=email)
+            serializer = PerevalAddedSerializer(perevaladded_items, many=True, context={'request': request})
+            return Response(serializer.data, status=status.HTTP_200_OK)
+        else:
+            return Response({"message": "Введите email пользователя в URL"}, status=status.HTTP_400_BAD_REQUEST)
+
+
+
+
+
+
+
+
+
+
+
 
 
     # ОПРЕДЕЛЯЕМ МЕТОД SubmitData ВНУТРИ КОНТРОЛЛЕРА
